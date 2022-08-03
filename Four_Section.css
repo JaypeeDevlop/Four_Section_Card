@@ -69,8 +69,11 @@ header p {
 .container {
     display: flex;
     justify-content: center;
-    height: ;
     align-items: center;
+}
+
+.cont {
+    display: none;
 }
 
 .team {
@@ -107,12 +110,39 @@ header p {
 }
 
 
-@media screen (max-width: 100px) {
-    /* .container {
+@media (max-width: 1000px) {
+     .container {
         display: none;
-    } */
+    }
 
-    body {
-        background: #444;
+    .cont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    } 
+
+    .cover1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cover2 {
+        display: flex;
+        flex-direction: row;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cover1, .cover2 {
+        display: flex;
+        flex-direction: column;
     }
 }
